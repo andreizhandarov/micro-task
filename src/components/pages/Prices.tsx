@@ -78,7 +78,7 @@ export const Prices = (props: Props) => {
                     <tr key={index}>
                         <td className={styles.tdStyle}>{sneaker.manufacturer}</td>
                         <td className={styles.tdStyle}>{sneaker.name}</td>
-                        <td className={styles.tdStyle}>${sneaker.price}</td>
+                        <td className={styles.tdStyle}>{sneaker.price}</td>
                         <td className={styles.tdStyle}>{sneaker.onSale ? 'Yes' : 'No'}</td>
                     </tr>
                 ))}
