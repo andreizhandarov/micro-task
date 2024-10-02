@@ -65,9 +65,13 @@ const privateRoures: RouteObject[] = [
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <App/>,
+        element: <App />,
         errorElement: <Navigate to ={PATH.ERROR404}/>,
         children: [
+            {
+                path: "/",
+                element: <Adidas />,
+            },
             {
                 element: <PrivateRoutes/>,
                 children: privateRoures
